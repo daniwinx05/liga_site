@@ -5,13 +5,9 @@
     padding: 0;
 }
 
-body{
-    font-family: "Inconsolata", monospace;
-}
-
-
 header {
     background-color: hsl(265, 64%, 34%);
+    font-family: "Inconsolata", monospace;
 }
 
 
@@ -32,3 +28,48 @@ nav a:hover {
     color: #cca2f3;
 }
 
+
+body {
+    color: white;
+}
+
+section.home {
+    
+    height: 600px;
+    background-color: rgb(24, 24, 138);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+
+p {
+    max-width: 500px;
+    max-height: 200px;
+    margin-left: 50px;
+}
+
+.social {
+    padding-top: 10px;
+    margin-left: 50px;
+   
+}
+
+.social a {
+    color: white;
+    font-size: 30px;
+
+}
+
+.liga{
+    
+    height: auto;
+    border-radius: 100%;
+    
+}
