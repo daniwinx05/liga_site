@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga Feminina de TI</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Projetos</a>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#projetos">Projetos</a>
             <img src="Logo.png" alt="20px" width="50px">
-            <a href="#">Tabela</a>
+            <a href="#tabela">Tabela</a>
             <a href="#">Participates</a>
             <a href="#">Contatos</a>
         </nav>
@@ -26,7 +27,7 @@
 
     <main>
 
-        <section class="home">
+        <section id="home">
             <div class="inicio">
 
                 <h1>Bem-Vindas <br> a Liga Feminina <br>
@@ -59,7 +60,7 @@
 
         </section>
 
-        <section class="sobre">
+        <section id="sobre">
 
 
             <h1>Sobre Nós</h1>
@@ -105,17 +106,53 @@
 
         </section>
 
-        <section class="Projetos">
-            
+        <section id="projetos">
+
+            <h1>Projetos em Andamento</h1>
+
+            <div class="info">
+                <div class="cien">
+
+                    <i class='bx bxs-graduation'></i>
+
+                    <h3>Futuras Ciêntistas</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.</p>
+                </div>
+
+                <div class="site">
+
+                    <i class='bx bx-laptop'></i>
+
+                    <h3>Site da Liga</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.</p>
+                </div>
+
+                <div class="pesquisa">
+
+                    <i class='bx bxs-bar-chart-alt-2'></i>
+
+                    <h3>Pesquisa</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.</p>
+                </div>
+            </div>
+
+
+
         </section>
-        
-        <section class="tabela">
+
+        <section id="tabela">
             <h1>Título da Tabela</h1>
             <table>
                 <thead>
-                    <th>Coluna de títulos</th>
-                    <th>Coluna 1</th>
-                    <th>Coluna 2</th>
+                    <tr>
+                        <th>Coluna de títulos</th>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                    </tr>
+
                 </thead>
 
                 <tbody>
@@ -131,7 +168,7 @@
                         <td>Conteúdo</td>
                         <td>Conteúdo</td>
                         <td>Conteúdo</td>
-                        
+
                     </tr>
                 </tbody>
                 <tbody>
@@ -151,7 +188,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
         </section>
 
 
