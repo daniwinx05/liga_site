@@ -10,25 +10,27 @@ body {
     color: white;
     font-family: "Exo 2", sans-serif;
 
+
 }
 
 header {
     background-color: rgb(23, 5, 80);
-    font-family: "Inconsolata", monospace;
+    font-family: "Exo 2", sans-serif;
 }
 
 
 nav {
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
+
 }
 
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 20px 10px;
+    padding: 20px 50px;
 }
 
 nav a:hover {
@@ -38,7 +40,8 @@ nav a:hover {
 
 #home {
 
-    height: 600px;
+    padding: 40px;
+    height: 650px;
     background-color: rgb(49, 6, 90);
     display: flex;
     align-items: center;
@@ -46,30 +49,52 @@ nav a:hover {
 
 }
 
-h1,
-h2 {
-    margin-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 15px;
+
+
+#home h1 {
+    font-size: 60px;
 }
 
+#home h2 {
+    font-size: 35px;
+    color: rgb(192, 153, 227);
+}
 
-p {
+.titulo {
     max-width: 500px;
     max-height: 200px;
     margin-left: 50px;
-    padding: 10px;
+    padding: 20px;
 }
+
+#home p {
+    max-width: 500px;
+    max-height: 200px;
+    padding: 5px;
+
+}
+
+
+
 
 .social {
     padding-top: 10px;
-    margin-left: 50px;
+    font-size: 20px;
+    display: flex;
+    text-align: left;
+    align-items: center;
 
 }
 
-.social a {
+.social h3 {
+    color: rgb(192, 153, 227);
+}
+
+.social a,
+#contato i {
     color: white;
     font-size: 30px;
+    padding: 5px;
 
 }
 
@@ -80,21 +105,28 @@ p {
 }
 
 #sobre h1,
+#projetos h1,
 #tabela h1,
-#projetos h1 {
+#part h1,
+#contato h1 {
     text-decoration: underline;
     display: flex;
     text-align: center;
     justify-content: center;
     padding-bottom: 25px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(189, 157, 218);
+    
 }
+
+
 
 
 #sobre {
     background-color: rgb(23, 5, 80);
-    height: 600px;
-
-
+    height: 650px;
+    padding: 40px;
 
 }
 
@@ -104,6 +136,21 @@ p {
     justify-content: space-around;
     padding: 10px;
 
+}
+
+#sobre h3 {
+    max-width: 500px;
+    max-height: 200px;
+    margin-left: 50px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#sobre p {
+    max-width: 500px;
+    max-height: 200px;
+    margin-left: 50px;
+    padding: 20px;
 
 }
 
@@ -112,7 +159,7 @@ p {
     box-shadow: 0 0 10px rgb(194, 194, 194, 0.4);
 }
 
-input {
+#sobre input {
     margin-left: 50px;
     height: 45px;
     width: 15vw;
@@ -120,62 +167,75 @@ input {
     font-weight: bold;
     color: rgb(70, 25, 89);
     margin-top: 15px;
-    border: none;
-    box-shadow: 0 0 10px #161616;
-
+    border: 1px;
 
 }
 
-
+#sobre input:hover {
+    background-color: #c4c4c4;
+    box-shadow: 0 0 10px #161616;
+}
 
 
 
 #projetos {
     background-color: rgb(49, 6, 90);
-    height: 600px;
+    height: 650px;
+    padding: 40px;
 }
-
 
 
 .info {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     color: #170550;
+    margin-top: 50px;
+
+}
+
+.cien,
+.site,
+.pesquisa {
     background-color: white;
+    border-radius: 10px;
     margin: 20px;
     padding: 40px;
-    border-radius: 10px;
+
 
 }
 
 .info i {
     font-size: 50px;
-    display: flex;
+    padding: 25px;
+    color: rgb(49, 6, 90, 0.6);
+}
+
+.info p {
+    padding: 30px;
     text-align: center;
     justify-content: center;
-    padding: 5px;
-    color: rgb(49, 6, 90, 0.6);
 }
 
 
 
 #tabela {
     background-color: rgb(23, 5, 80);
-    height: 600px;
-
-
+    height: 650px;
+    padding: 40px;
+    overflow: hidden;
 }
 
 table {
     width: 80%;
     border-collapse: collapse;
     margin: 0 auto;
-    padding: 5px;
-    border-radius: 15px;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid transparent;
 }
-
 
 td,
 th {
@@ -183,8 +243,6 @@ th {
     padding: 10px;
     text-align: center;
     font-size: 20px;
-
-
 }
 
 th {
@@ -192,5 +250,125 @@ th {
     color: rgb(23, 5, 80);
     padding: 30px;
     font-size: 20px;
+}
 
+#part {
+    background-color: rgb(49, 6, 90);
+    height: 650px;
+    padding: 40px;
+}
+
+#part h1{
+    margin-bottom: 40px;
+}
+
+#part img {
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+
+.fotos,
+.foto2 {
+    margin-top: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#contato {
+    background-color: rgb(23, 5, 80);
+    height: 650px;
+    padding: 40px;
+
+}
+
+#contato p {
+    padding: 15px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.mensagem {
+    max-width: 600px;
+    max-height: 600px;
+    margin-left: 80px;
+    padding: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+    gap: 20px;
+
+}
+
+.mensagem input {
+    background-color: rgb(67, 54, 106);
+    border-radius: 50px;
+    border: none;
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+.button {
+    background-color: rgb(67, 54, 106);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50px;
+    margin: 15px auto;
+    font-weight: bold;
+    
+
+}
+
+
+.button:hover {
+    background-color: rgb(185, 185, 185, 0.5);
+    box-shadow: 0 0 10px #161616;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0px;
+    height: 10vh;
+    background-color: #31065A;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
